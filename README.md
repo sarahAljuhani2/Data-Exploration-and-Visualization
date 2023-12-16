@@ -26,6 +26,8 @@ Games. The columns include:
 These columns collectively provide a comprehensive dataset that allows for a detailed exploration of the Olympic 
 Games over time, offering insights into historical trends, athlete performances, and the broader context of this 
 global sporting event.
+
+
 • Data Preprocessing:
 The data preprocessing phase is crucial to ensure the quality and reliability of our dataset. In this step, we first 
 dropped the initial column ID, as it did not contribute to the analysis. Next, we conducted a comprehensive check 
