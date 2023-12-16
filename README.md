@@ -1,3 +1,6 @@
+The project is about data exploration and visualization of Olympic Games data. Here are the steps involved in the project:
+
+
 • Data extraction:
 The dataset utilized for our analysis is sourced from Kaggle. The dataset with 70,000 rows encompasses a wealth 
 of information about the Olympics, including historical data, details about host cities, participating nations, and 
