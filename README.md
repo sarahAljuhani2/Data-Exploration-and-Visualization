@@ -1,55 +1,67 @@
-The project is about data exploration and visualization of Olympic Games data. Here are the steps involved in the project:
+# 🏅 Olympic Games Data Analysis & Visualization Project
 
+This project focuses on data exploration and visualization of Olympic Games data. It walks through each stage of the data analysis pipeline to uncover trends and insights from historical Olympic records.
 
-• Data extraction:
-The dataset utilized for our analysis is sourced from Kaggle. The dataset with 70,000 rows encompasses a wealth 
-of information about the Olympics, including historical data, details about host cities, participating nations, and 
-athletic achievements. This dataset serves as a valuable resource for uncovering patterns, trends, and insights that 
-contribute to a nuanced understanding of the Olympics
-The dataset comprises several key columns, each playing a role in providing a holistic perspective on the Olympic 
-Games. The columns include:
-1. ID: A unique identifier for each entry in the dataset.
-2. Name: The name of the participating athlete.
-3. Sex: The gender of the athlete.
-4. Age: The age of the athlete at the time of the event.
-5. Height: The height of the athlete.
-6. Weight: The weight of the athlete.
-7. Team: The name of the team to which the athlete belongs.
-8. NOC: National Olympic Committee code, representing the country.
-9. Games: Information about the specific Olympic Games, including the year and season.
-10. Year: The year in which the Olympic Games were held.
-11. Season: The season of the Olympic Games.
-12. City: The host city for a particular edition of the Olympics.
-13. Sport: The type of sport involved in a specific event.
-14. Event: The specific event or competition within a sport.
-15. Medal: The type of medal awarded (Gold, Silver, Bronze, or None).
-These columns collectively provide a comprehensive dataset that allows for a detailed exploration of the Olympic 
-Games over time, offering insights into historical trends, athlete performances, and the broader context of this 
-global sporting event.
+---
 
+## 📌 Project Steps
 
-• Data Preprocessing:
-The data preprocessing phase is crucial to ensure the quality and reliability of our dataset. In this step, we first 
-dropped the initial column ID, as it did not contribute to the analysis. Next, we conducted a comprehensive check 
-for missing values across all columns. The following columns were identified as having missing values:
-- Age: 2732 missing values
-- Height: 16254 missing values
-- Weight: 17101 missing values
-- Medal: 60310 missing values
+### 1.  Data Extraction
 
-- • Data Exploration:
-The resulting dataset, free from duplicates and outliers, is ready for analysis. A pandas Data Frame is created with 14 columns and 49,211 rows, containing information about Olympic athletes. The statistical summary is calculated for the columns Year, Age, Height, and Weight, providing insights into the central tendency, distribution, and potential outliers of the data. Histograms are plotted to visualize the distributions of people by age, height, and weight over time. Box plots are generated to show the distribution of age, height, and weight for Olympic athletes grouped by year. A scatter plot is created to illustrate the relationship between height and weight, differentiated by gender. Finally, a pair plot examines the relationships between Year, Age, Height, Weight, and Medal in Olympic athletes, with each subplot color-coded by the type of medal won.
+The dataset used in this project was sourced from **Kaggle** and includes over **70,000 rows** of rich historical data. It contains information about athletes, events, host cities, and countries participating in the Olympics.
 
-• Data Visualization:
-Data visualization is a key aspect of the project. After preprocessing the dataset, the project aims to visually represent the data to gain insights and communicate findings effectively.
+**Key Columns in the Dataset:**
+- `ID`: Unique identifier for each entry  
+- `Name`: Athlete’s name  
+- `Sex`: Gender of the athlete  
+- `Age`: Athlete’s age during the event  
+- `Height`: Athlete’s height  
+- `Weight`: Athlete’s weight  
+- `Team`: Team or country the athlete represents  
+- `NOC`: National Olympic Committee code  
+- `Games`: Edition of the Olympic Games (e.g., 2012 Summer)  
+- `Year`: Year of the event  
+- `Season`: Season (Summer or Winter)  
+- `City`: Host city  
+- `Sport`: Type of sport  
+- `Event`: Specific competition  
+- `Medal`: Type of medal won (Gold, Silver, Bronze, or None)  
 
+---
 
+### 2. 🧹 Data Preprocessing
 
+To ensure data quality, the following preprocessing steps were taken:
 
+- Removed the `ID` column (not useful for analysis)  
+- Checked for and documented missing values:
+  - `Age`: 2,732 missing values  
+  - `Height`: 16,254 missing values  
+  - `Weight`: 17,101 missing values  
+  - `Medal`: 60,310 missing values  
 
+---
 
+### 3. 🔍 Data Exploration
 
+After cleaning the data:
 
+- Created a DataFrame with **14 columns** and **49,211 rows**  
+- Generated **statistical summaries** for `Year`, `Age`, `Height`, and `Weight`  
+- Plotted **histograms** for age, height, and weight distributions  
+- Used **box plots** to show data spread by year  
+- Created a **scatter plot** to show height vs. weight by gender  
+- Built a **pair plot** to explore relationships between key features and medal types  
 
+---
 
+### 4. 📊 Data Visualization
+
+Data visualization played a crucial role in:
+
+- Understanding the distribution and trends of athlete features over time  
+- Comparing athlete performance by sport, gender, and country  
+- Gaining insights into the Olympic Games through intuitive visual tools  
+
+---
 
